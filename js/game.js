@@ -31,9 +31,10 @@ var level1 = {
     this.player.animations.play('idle')
   },
   render: function () {
-
+    game.debug.text('FPS: '+game.time.fps || 'FPS: --',40,40,"#00ff00")
   },
   takeCoin(a,b) {
+    b.body.enable = false
 
     game.add.tween(b.scale).to({x:0},150).start()
     game.add.tween(b).to({y:50},150).start()
