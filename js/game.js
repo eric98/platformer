@@ -1,5 +1,6 @@
 var level1 = {
   preload: function () {
+    game.time.advancedTiming = true
     game.load.image('wall','assets/wall.png')
     game.load.image('ground','assets/ground.png')
     game.load.image('coin','assets/coin.png')
